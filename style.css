@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:futura round, sans-serif;
+    color:white;
+    font-size: 24pt;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.page1{
+    background-image: url(/one.jpg);
+    background-size: cover; 
+    background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.page2{
+    background-image: url(/two.jpg);
+    background-size: cover;    
+    background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  
+}
+
+.page2 > h1 {
+    color:black;
+}
+
+.page3{
+    background-image: url(/three.png);
+    background-size: cover; 
+    background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.page4{
+    background-image: url(/four.png);
+    background-size: cover;  
+    background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
